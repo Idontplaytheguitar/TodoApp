@@ -1,0 +1,67 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+}
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+h1{
+    margin: 15px;
+}
+.Home{
+    background-color: #000000;
+    border-bottom: 1px solid #e5e5e5;
+    border-top: 1px solid #e5e5e5;
+    color: rgb(240, 224, 10);
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    width: 98.7vw;
+    height: 95vh;
+    background: linear-gradient(317deg, #ff0000 3%, #000000 10%, #000 91%, #ff0000 100%);
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.932);
+    padding: 1rem;
+    border: 1px groove rgb(255, 0, 0);
+    border-radius: 10px;
+}
+.navbar img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.navbarLinks {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.NavLinks{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    text-decoration: none;
+    color: rgb(251, 255, 0);
+    margin: 10px;
+    font-size: 16px;
+}
+.NavLinks:hover{
+    color: rgb(255, 0, 0);
+}
