@@ -1,0 +1,69 @@
+.ContainerATD{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.FormAddToDo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 5%;
+}
+.ta{
+    width: 30%;
+    height: 30%;
+    border: none;
+    border-bottom: 1px solid #000;
+    padding: 5%;
+    font-size: 1.5em;
+    resize: none;
+    background-color: rgba(255, 255, 255, 0.144);
+    color: yellow;
+    border: 2px outset rgba(216, 216, 13, 0.699);
+    border-radius: 34px;
+    outline: none;
+    margin: 2%;
+}
+.ta::placeholder{
+    color: rgba(0, 0, 0, 0.486);
+}
+.taT{
+    width: 30%;
+    height: 15%;
+    border: none;
+    border-bottom: 1px solid #000;
+    padding: 5%;
+    font-size: 1.5em;
+    resize: none;
+    background-color: rgba(255, 255, 255, 0.144);
+    color: yellow;
+    border: 2px outset rgba(216, 216, 13, 0.699);
+    border-radius: 34px;
+    outline: none;
+    margin: 2%;
+}
+.taT::placeholder{
+    color: rgba(0, 0, 0, 0.486);
+}
+.buttonS{
+    width: 10%;
+    height: 15%;
+    border: none;
+    border-radius: 34px;
+    background-color: rgba(255, 255, 255, 0.144);
+    color: rgba(238, 255, 0, 0.74);
+    outline: none;
+    font-size: 1.3em;
+    cursor: pointer;
+    margin: 10px;
+}
+.buttonS:hover{
+    background-color: rgba(255, 255, 255, 0.24);
+    color: rgba(238, 203, 3, 0.747);
+}

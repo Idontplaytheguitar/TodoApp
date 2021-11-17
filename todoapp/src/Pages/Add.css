@@ -1,0 +1,10 @@
+.AddContainer{
+    color: rgb(240, 224, 10);
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    width: 97vw;
+    height: 90vh;
+}

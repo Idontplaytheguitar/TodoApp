@@ -1,0 +1,33 @@
+.title{
+    font-size: 40px;
+    font-weight: bold;
+    color: rgba(218, 241, 10, 0.781);
+    text-align: center;
+    margin-top: 20px;
+}
+
+.subtitle{
+
+    font-size: 20px;
+    font-weight: bold;
+    color: rgba(218, 241, 10, 0.781);
+    text-align: center;
+    margin-top: 15%;
+}
+.aH{
+    font-size: 20px;
+    font-weight: bold;
+    color:rgba(218, 241, 10, 0.781);
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: none;
+}
+.aH:hover{
+    color:rgba(218, 241, 10, 0.658);
+    
+}
+.LandingContainer{
+
+    display: flex;
+    flex-direction: column;
+}

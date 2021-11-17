@@ -1,8 +1,10 @@
 import React from "react";
 import { Todo } from "../Todo/Todo";
+import './Todos.css'
 
 export function Todos ({filteredTodos}){
 
+    console.log(filteredTodos);
 
     if(!filteredTodos){
         return (
@@ -13,9 +15,9 @@ export function Todos ({filteredTodos}){
         )
     }
     return (
-        <div>
-            {filteredTodos.map(todo => (
-                <Todo text={todo.text} done={todo.done} title={todo.title}/>
+        <div className='todosCont'>
+            {filteredTodos?.map(todo => (
+                <Todo id={todo.id} created={todo.created} text={todo.desc} done={todo.done} title={todo.title}/>
             ))}
         </div>
     );

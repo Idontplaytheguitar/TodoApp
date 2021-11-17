@@ -3,15 +3,24 @@ const initialState = {
     filteredTodos: [],
     filter: 'SHOW_ALL',
     details: {},
+    update: false,
 };
 
 export const rootReducer = (state = initialState, action) => {
+
     switch (action.type) {
 
         case 'ADD_TODO':
+            console.log(action.payload, 'add todo');
             return {
                 ...state,
                 todos: [...state.todos, action.payload],
+            };
+
+        case 'GET_TODOS':
+            console.log( 'get todos');
+            return {
+                ...state
             };
 
         case 'TOGGLE_TODO': 
@@ -37,7 +46,7 @@ export const rootReducer = (state = initialState, action) => {
             return {
                 ...state,
                 filteredTodos: state.todos.filter(todo => {
-                    switch (action.payload) {
+                    switch (state.filter) {
                         case 'SHOW_ALL':
                             return true;
                         case 'SHOW_ACTIVE':
@@ -47,11 +56,27 @@ export const rootReducer = (state = initialState, action) => {
                     }
                 })
             };
+        
+        case 'DELETE_TODO':
+            console.log(action.payload, 'delete todo');
+
+            return {
+                ...state,
+                todos: state.todos.filter(todo => todo.id !== action.payload),
+                filteredTodos: state.filteredTodos.filter(todo => todo.id !== action.payload),
+            };
 
         case 'SET_DETAILS':
             return {
                 ...state,
                 details: action.payload,
+            };
+
+        case 'TOGGLE_UPDATE':
+            console.log('||||||||||||REDUCER1||||||||||||||||||||', 'toggle update');
+            return {
+                ...state,
+                update: !state.update
             };
 
         default:

@@ -12,7 +12,7 @@ export const NavBar = () => {
 
                 <div className="navbarLinks">
                     <NavLink className='NavLinks' to="/home">Home</NavLink>
-                    <NavLink className='NavLinks' to="/addToDo">Add something to do!</NavLink>
+                    <NavLink className='NavLinks' to="/add">Add something to do!</NavLink>
                 </div>
             </div>
         </div>
